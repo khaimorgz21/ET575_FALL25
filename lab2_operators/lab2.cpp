@@ -54,5 +54,29 @@ int main(){
      cout<<"is number1 not equal to number2? "<<(number1 != number2)<<endl;
 
 
-return 0;
+    cout<<"\n------ example 4: logical operator ------ "<<endl;
+    // AND operator
+    bool check_numbers = (number1 != number2) && (number1 < number2) && (number1>5);
+    // number1 != number2 --> true
+    // number1<5 --> false
+    // check_numbers = true && true && false = false
+    cout<<"The result of check_number is "<<check_numbers<<endl;
+
+
+    // OR Operator
+    bool check_or = (number2 > 0) || (number2 != 3) || (number2<number1);
+    // number2 > 10 --> false
+    // number2 != 3 --> true
+    // number2<number1 --> false
+    // false || true || false = true (1)
+    cout<<"The result of check_number is "<<check_or<<endl;
+
+    cout<<"\n------ example 5: casting ------ "<<endl;
+    int n = 5;
+    float m =n/2.0 ;
+
+    cout<<"implicit casting = "<<m<<endl;
+
+    cout<<"\n------ EXERCISE ------ "<<endl;
+    return 0;
 }
