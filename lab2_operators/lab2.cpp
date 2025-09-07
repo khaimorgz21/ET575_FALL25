@@ -1,7 +1,7 @@
 /*
 Student's full name
 Lab 2, operators
-Sep 3, 2025
+Sep 7, 2025
 */
 #include<iostream>
 
