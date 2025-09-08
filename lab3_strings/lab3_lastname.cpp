@@ -55,7 +55,7 @@ int main(){
     int index_prof = msg.find("Prof");
     cout<<"The index of Prof. = "<<index_prof<<endl;
 
- 
+    
 
 
     return 0;
