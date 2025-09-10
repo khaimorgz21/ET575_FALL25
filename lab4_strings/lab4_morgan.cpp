@@ -1,6 +1,6 @@
 /*
 Makhai Morgan
-Lab 3, string and string methods 
+Lab 4, string and string methods 
 Sep 8, 2025
 */
 #include<iostream>
@@ -55,7 +55,11 @@ int main(){
     int index_prof = msg.find("Prof");
     cout<<"The index of Prof. = "<<index_prof<<endl;
 
-    
+    cout<<"\n ----- EXERCISE ----- "<<endl;
+    string word ="";
+    cout<<"Enter a word: ";
+    cin>>word;
+
 
 
     return 0;
