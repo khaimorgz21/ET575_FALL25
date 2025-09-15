@@ -90,24 +90,24 @@ cout << "Enter Final Exam grade: ";
     // multiway conditional statement
     
     if (grade <= 100 && grade >= 90) {
-        GPA = "A";
+        gpa = "A";
     }
     else if (grade < 90 && grade >= 80) {
-        GPA = "B";
+        gpa = "B";
     }
     else if (grade < 80 && grade >= 70) {
-        GPA = "C";
+        gpa = "C";
     }
     else if (grade < 70 && grade >= 60) {
-        GPA = "D";
+        gpa = "D";
     }
     else if (grade < 60) {
-        GPA = "F";
+        gpa = "F";
     }
     else {
-        GPA = ""; // Invalid grade
+        gpa = ""; // Invalid grade
     }
     // print result
-    cout << "\nA final grade of " << grade << " is equivalent to a GPA of " << GPA << endl;
+    cout << "\nA final grade of " << grade << " is equivalent to a GPA of " << gpa << endl;
     return 0;
 }
