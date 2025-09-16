@@ -119,5 +119,29 @@ int main(){
 
     cout<<"\n ----- EXERCISE 1----- "<<endl;
 
+        int number;
+        char choice;
+
+        cout << "Enter a number: ";
+        cin >> number;
+
+        cout << "Do you want to double the number? (Y/y for yes, N/n for no): ";
+        cin >> choice;
+
+        switch(choice) {
+            case 'Y':
+            case 'y':
+                number *= 2; // double the number using assignment operator
+                break;
+            case 'N':
+            case 'n':
+                // keep the number as it is
+                break;
+            default:
+                number = 0; // reset to zero
+            }   
+
+            cout << "The number is set to " << number << endl;
+
     return 0;
 }
