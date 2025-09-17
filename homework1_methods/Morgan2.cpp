@@ -33,8 +33,8 @@ int main() {
     cout << "\n------------------------------ RESULT ACTIVITY 2 ----------------------------\n";
     cout << "Step 3) Is the radius greater than height?\t\t\t" << isGreater << endl;
     cout << "Step 4) Is the radius equal to height?\t\t\t\t" << isEqual << endl;
-    cout << "Step 5) Triple height =\t\t\t\t\t" << fixed << setprecision(1) << height << "cm" << endl;
-    cout << "Step 5) Increased radius by 5 =\t\t\t\t" << fixed << setprecision(1) << radius << "cm" << endl;
+    cout << "Step 5) Triple height =\t\t\t\t\t"  << height << "cm" << endl;
+    cout << "Step 5) Increased radius by 5 =\t\t\t\t" << radius << "cm" << endl;
     cout << "Step 6) Is the radius not equal to and greater than height ?\t" << condition << endl;
     cout << "Step 7) The volume of a right cylinder with radius " 
          << radius << "cm and height " << height 
