@@ -117,7 +117,43 @@ int main(){
         break;
     }
 
+    long savings;
+    cout << "Enter the amount of your savings: ";
+    cin >> savings;
+
+    
     cout<<"\n ----- EXERCISE 1----- "<<endl;
+
+    if (savings < 0) {
+        cout << "With $" << savings << " you should have some savings!" << endl;
+    }
+    else if (savings > 0 && savings < 200000) {
+        cout << "With $" << savings << " you can afford: Keep saving!" << endl;
+    }
+    else if (savings >= 200000 && savings <= 500000) {
+        cout << "With $" << savings << " you can afford an Apartment or Co-op." << endl;
+        if (savings <= 300000) {
+            cout << " → Studio" << endl;
+        } else if (savings <= 400000) {
+            cout << " → 1 BR + 1 Bath" << endl;
+        } else {
+            cout << " → 2 BRs + 1 Bath" << endl;
+        }
+    }
+    else if (savings >= 500001 && savings <= 1000000) {
+        cout << "With $" << savings << " you can afford a House." << endl;
+        if (savings <= 700000) {
+            cout << " → 2 BRs + 2 Baths" << endl;
+        } else {
+            cout << " → 3 BRs + 3 Baths" << endl;
+        }
+    }
+    else if (savings >= 1000001) {
+        cout << "With $" << savings << " you can afford a Mansion." << endl;
+    }
+
+
+    cout<<"\n ----- EXERCISE 2----- "<<endl;
 
         int number;
         char choice;
