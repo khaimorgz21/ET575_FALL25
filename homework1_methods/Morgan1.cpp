@@ -16,7 +16,7 @@ int main() {
     string part2 = "New York City";
     // Step 2: Collect name from keyboard
     string name;
-    cout << "Enter your name: ";
+    cout << "Enter your name ";
     getline(cin, name); // allows full names with spaces
 
     // Step 3: Concatenate strings
@@ -32,7 +32,6 @@ int main() {
     string replacedMessage = fullMessage;
     if (indexOfMa != string::npos) {
         replacedMessage.replace(indexOfMa, 2, "%---%");
-    }
 
     // Step 8: Display results
     cout << "\n------------------------------ RESULT ACTIVITY 1 ----------------------------\n";
@@ -40,5 +39,7 @@ int main() {
     cout << "Message length:\t\t" << lengthOfMessage << endl;
     cout << "Index of character 'ma':\t" << (indexOfMa != string::npos ? to_string(indexOfMa) : "Not found") << endl;
     cout << "Replace 'ma' with %---%:\t" << replacedMessage << endl;
-    
+    }
     return 0;
+
+}
