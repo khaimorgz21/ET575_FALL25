@@ -137,6 +137,15 @@ int main(){
     cout<<"The total of sum of numbers = "<<sum_all<<endl;
 
     cout<<"\n ---- EXERCISE ----"<<endl;
-
+    int sum = 0;
+    int abc;
+    cout<<"Enter a Positive number: ";
+    while(cin >> abc){
+        sum += abc;
+        cout<<"Enter a Positive number: ";
+        cout<<"Invalid. the number is not a positive number.";
+        break;
+    }
+    cout<<"\n"<<sum;
     return 0;
 }
