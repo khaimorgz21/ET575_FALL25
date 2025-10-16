@@ -62,11 +62,7 @@ int main(){
     cout<<"The total sum of negative numbers = "<<sum_negative<<endl;
 
     cout<<"\n--------LAB EXERCISE 1 ---------"<<endl;
+    
 
     cout<<"\n--------LAB EXERCISE 2 ---------"<<endl;
-    int user_input = 0;
-    cout<<"Enter an initial value ";
-    cin>>user_input;
-    for(int i = start; i <= 30; i += 4)
-    return 0;
-}
+   
