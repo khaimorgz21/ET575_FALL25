@@ -143,7 +143,7 @@ int main(){
     while(cin >> abc){
         sum += abc;
         cout<<"Enter a Positive number: ";
-        cout<<"Invalid. the number is not a positive number.";
+        cout<<" This number is a positive number.";
         break;
     }
     cout<<"\n"<<sum;
