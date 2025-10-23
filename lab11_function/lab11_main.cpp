@@ -49,31 +49,13 @@ int main(){
     printnumber(x, checknum);
 
     cout<<"\n ------- EXERCISE -------- "<<endl;
-    // Function 1: Check if a number is even
-    bool isEven(int number) {
-        if (number % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    // Function 2: Print the result
-    void printResult(int number, bool result) {
-        cout << "Is " << number << " even? " << (result ? "true" : "false") << endl;
-    }
-    
     int num;
 
-    // Ask user for input
-    cout << "Enter an integer number: ";
+    cout << "Enter an integer: ";
     cin >> num;
 
-    // Call the first function and store result
-    bool result = isEven(num);
-
-    // Call the second function to print output
-    printResult(num, result);
-
+    bool result = isEven(num); // call the function to check evenness
+    printResult(num, result); // call the function to print the result
+    
     return 0;
 }

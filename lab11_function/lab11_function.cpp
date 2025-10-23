@@ -76,3 +76,13 @@ void printnumber(int x, string n){
 }
 
 // EXERCISE
+bool isEven(int number) {
+    if (number % 2 == 0)
+        return true;
+    else
+        return false;
+}
+
+void printResult(int number, bool result) {
+    cout << "Is " << number << " even? " << boolalpha << result << endl;
+}
