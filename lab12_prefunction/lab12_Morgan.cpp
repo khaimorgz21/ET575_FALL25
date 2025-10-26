@@ -35,16 +35,15 @@ int main(){
     printhyp(s1, s2, h);
 
     cout<<"\n-------- EXERCISE --------"<<endl;
-    int x1 = // call 1st function
-    int y1 = // call 1st function
-    int x2 = // call 1st function
-    int y2 = // call 1st function
+    int x1 = collectNumber();
+    int y1 = collectNumber();
+    int x2 = collectNumber();
+    int y2 = collectNumber();
 
-    float d = // call 2nd function
+    float d = computeDistance(x1, y1, x2, y2);
 
-    // call 3rd function
+    displayResult(d);
 
 
-    
     return 0;
 }
