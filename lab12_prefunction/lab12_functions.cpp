@@ -28,7 +28,25 @@ void printhyp(float s1, float s2, float h){
 
 // EXERCISE
 // function to collect a number greater than 0
+double getPositiveNumbers(string prompt) {
+    double num;
+    do {
+        cout << prompt;
+        cin >> num;
+        if (num <= 0) {
+            cout << "Please enter a number great than zero."<<endl;
+        } 
+    } while (num <= 0); // Loop until the number is valid
+    return num;
+}
 
 // function to calculate the distance of four point
+double calculateDistance(double x1, double y1, double x2, double y2) {
+    double distance = sqrt(pow(x2 -x1, 2) + pow(y2 - y1, 2));
+    return distance;
+}
 
 // function to print the result
+void printResult(double x1, double y1, double x2, double y2, double distance) {
+    cout<<"The distance of points(" << x1 << ", " << y1 << ") and (" << x2 << ", " << y2 << ") is " << distance << endl;
+}
