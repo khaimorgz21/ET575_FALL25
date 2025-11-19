@@ -71,5 +71,25 @@ void printresult(int resultsearch, int target){
 
 // EXERCISE
 // function that returns the sum of all even numbers in an array
+int sumEven(int arr[], int size) {
+    int sum = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
 
 // function that returns the counts of all negative numbers in an array
+int countNegative(int arr[], int size) {
+    int count = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i] < 0) {
+            count++;
+        }
+    }
+    return count;
+}
