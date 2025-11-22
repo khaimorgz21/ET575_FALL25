@@ -37,6 +37,34 @@ int main(){
     cout<<"\n --- example 5:odd numbers in a 2D array  ---"<<endl;
     int c = total_odd(arr_num, 2, 3);
     cout<<"Total odd numbers = "<<c<<endl;
-    
+
+    cout<<"\n --- EXERCISE  ---"<<endl;
+    void populate(int arr[3][4]);
+    double average(int arr[3][4]);
+
+    srand(time(0));
+
+        int numbers[3][4];
+        char again = 'y';
+
+        while (again == 'y' || again == 'Y'){
+            populate(numbers);
+
+            cout<<"\nGenerated 3x4 Table:\n";
+            for (int r = 0; r < 3; r++){
+                for (int c = 0; c < 4; c++){
+                    cout<<numbers[r][c]<<"\t";
+                }
+                cout<<endl;
+            }
+
+            double avg = average(numbers);
+            cout<<"\nAverage of numbers = "<<avg<<endl;
+
+            cout<<"\nWould you like another run? (y/n): ";
+            cin>>again;
+        }
+
+        cout<<"\nProgram ended.\n";
     return 0;
 }

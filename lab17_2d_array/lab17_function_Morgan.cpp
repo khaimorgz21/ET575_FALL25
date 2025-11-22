@@ -75,3 +75,25 @@ int total_odd(int arr[][3], int rowsize, int colsize){
 
     return counter_odd;
 }
+
+// EXERCISE
+void populate(int arr[3][4]){
+    for (int r = 0; r < 3; r++){
+        for (int c = 0; c < 4; c++){
+            arr[r][c] = rand() % 101;
+        }
+    }
+}
+
+double average(int arr[3][4]){
+    int sum = 0;
+    int totalElements = 3 * 4;
+
+    for (int r = 0; r < 3; r++){
+        for (int c = 0; c < 4; c++){
+            sum += arr[r][c];
+        }
+    }
+
+    return static_cast<double>(sum) / totalElements;
+}
