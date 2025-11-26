@@ -1,0 +1,2 @@
+This is my output file - Type your full name.
+Hello, my name is Makhai and I am 21 years old.

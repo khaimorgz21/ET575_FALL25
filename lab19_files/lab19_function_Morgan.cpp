@@ -98,6 +98,43 @@ void appendfile(string filename){
 
     // close file
     fout.close();
+}
 
 // EXERCISE
+// Function 1: Create the file and write one line
+void createFile() {
+    ofstream outfile;
+    outfile.open("data_user.txt"); // create/overwrite file
+
+    outfile<<"This is my output file - Type your full name.\n";
+
+    outfile.close();
+}
+
+// Function 2: Append a new message to file
+void appendMessage(string msg) {
+    ofstream outfile;
+    outfile.open("data_user.txt", ios::app); // append mode
+
+    outfile<<msg<<endl;
+
+    outfile.close();
+}
+
+// Function 3: Read and display the file
+void readFile(string filename) {
+    ifstream infile;
+    infile.open(filename);
+
+    if (!infile) {
+        cout<<"Error: File could not be opened.\n";
+        return;
+    }
+
+    string line;
+    while (getline(infile, line)) {
+        cout<<line<<endl;
+    }
+
+    infile.close();
 }

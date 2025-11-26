@@ -24,6 +24,23 @@ int main(){
     appendfile("samplefile.txt");
 
     cout<<"\n------ EXERCISE ----"<<endl;
+    void createFile();
+    void appendMessage(string msg);
+    void readFile(string filename);
+
+    // 1. Create text file and write first line
+    createFile();
+
+    // 2. Append a message
+    string userMessage;
+    cout<<"Enter a message to append to the file: ";
+    getline(cin, userMessage);
+
+    appendMessage(userMessage);
+
+    // 3. Read the file
+    cout<<"\nContents of data_user.txt:\n";
+    readFile("data_user.txt");
     
     return 0;
 }
